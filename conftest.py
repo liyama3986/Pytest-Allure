@@ -8,9 +8,9 @@ import allure
 
 @pytest.fixture(scope="function")
 def browser():
-    # 使用WebDriver Manager自动管理浏览器驱动
+    #
     options = webdriver.ChromeOptions()
-    # options.add_argument("--headless")  # 无头模式，不显示浏览器
+    # options.add_argument("--headless")
     options.add_argument("--no-sandbox")
     options.add_argument("--disable-dev-shm-usage")
 
